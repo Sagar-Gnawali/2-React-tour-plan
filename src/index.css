@@ -135,7 +135,8 @@ p {
 }
 
 main {
-  width: 90vw;
+  /* width: 90vw; */
+  width:auto;
   max-width: var(--fixed-width);
   margin: 5rem auto;
 }
@@ -147,7 +148,7 @@ main {
   margin-bottom: 4rem;
 }
 .underline {
-  width: 6rem;
+  width: 12rem;
   height: 0.25rem;
   background: var(--clr-primary-5);
   margin-left: auto;
@@ -202,7 +203,7 @@ main {
   display: block;
   width: 200px;
   margin: 1rem auto 0 auto;
-  color: var(--clr-red-dark);
+  color:red;
   letter-spacing: var(--spacing);
   background: transparent;
   border: 1px solid var(--clr-red-dark);

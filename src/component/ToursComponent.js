@@ -1,11 +1,21 @@
 import React from 'react'
 import Tour from './TourComponent.js';
-const ToursComponent = () => {
+import { FaPlaneDeparture} from 'react-icons/fa';
+const ToursComponent = ({ tourData, notIntrested }) => {
     return (
-        <div>
-            <h1>Tours compoennts</h1>
-            <Tour/>
-        </div>
+        <section>
+            <div className="title">
+                <h1>Our tours plan <FaPlaneDeparture/></h1>
+                <div className="underline"></div>
+            </div>
+            <div>
+                {
+                    tourData.map((item) => (
+                        <Tour key={item.id} {...item} notIntrested={notIntrested}/>
+                    ))
+                }
+            </div>
+        </section>
     )
 }
 export default ToursComponent;
